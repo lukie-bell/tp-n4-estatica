@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 229, 113) ;
+    background-color:#020611 ;
 }
 
 header{
@@ -11,19 +11,33 @@ header{
 }
 
 header logo{
-    background-color: black;
     width: 120px;
     height: 120px;
     display: grid;
     float: left;
 }
+.contenedornombre{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 40% 60%;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+h1 .contenedornombre{
+    grid-row: 1;
+}
 
+p .contenedornombre{
+    grid-row: 2;
+}
 header nav{
-    background-color: white;
+    background-color:#494cd1;
     height: 120px;
     width: 100%;
     justify-content: center;
-    border-radius: 10%;
+    border-radius: 15%;
     justify-items: center;
 }
 
@@ -37,7 +51,6 @@ header nav{
 }
 
 .pikmin {
-    background-color: black;
     width: 120px;
     height: 120px;
     display: grid;
@@ -46,7 +59,6 @@ header nav{
 }
 
 .pikmin2 {
-    background-color: black;
     width: 120px;
     height: 120px;
     display: grid;
@@ -60,15 +72,19 @@ article {
     grid-template-rows: 1fr;
     height: 75vh;
     grid-gap: 15px;
+    justify-items: center;
 }
 .contenedor-tienda{
     grid-column: 2;
     grid-row: 1;
-    border-radius: 10%;
-    background-color: blanchedalmond;
+    background-color:#343b57;
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-rows: 25vh 25vh 25vh;
+    justify-items: center;
+}
+.contenedor-tienda p{
+    color: #65ade8;
 }
 .articulo1{
     grid-column: 1;
