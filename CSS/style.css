@@ -1,5 +1,8 @@
 body {
-    background-color:#9CCCC0 ;
+    background-image: url('../imagenes/stardew-5nm3af2n23ja2grf.jpg'); 
+    background-size: cover; /* Asegura que la imagen cubra todo el área */ 
+    background-position: center; /* Centra la imagen */ 
+    background-repeat: no-repeat;
 }
 
 @keyframes baile {
@@ -54,7 +57,7 @@ header logo{
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #5E9185;
+    color: black;
 }
 
 h1 .contenedornombre{
@@ -67,7 +70,7 @@ p .contenedornombre{
 }
 
 header nav{
-    background-color:#254B33;
+    background-color:  #D2B48C;
     height: 120px;
     width: 100%;
     justify-content: center;
@@ -98,7 +101,7 @@ header nav{
 
 article {
     display: grid;
-    grid-template-columns: auto 70vw auto;
+    grid-template-columns:  auto 60vw auto;
     grid-template-rows: 1fr;
     height: 75vh;
     grid-gap: 15px;
@@ -108,21 +111,77 @@ article {
 .contenedor-tienda{
     grid-column: 2;
     grid-row: 1;
-    background-color:#5E9185;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 25vh 25vh 25vh;
-    justify-items: center;
+    background-color:#654321;
     border-radius: 50px;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    justify-items: center;
+
+}
+
+.contenedorflores{
+    width: 500px;
+    height: 80%;
+    background-color: #ffe082;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: repeat(10 , 25vh);
+    justify-items: center;  
+    grid-row-gap: 15px;
+    overflow: auto; 
+    margin-top: 5%;
+}
+
+.flor {
+    background-color: rgb(206, 206, 206);
+    width: 333.39px;
+    height: 152.5px;
+    grid-column: 2;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+}
+
+.imgflor {
+    grid-column: 1;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    background-color: forestgreen;
+    border-radius: 120px;
+}
+
+.tituloflor{
+    font: bolder;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.textoflor{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.tablatienda{
+    display: grid;
+    grid-template-columns: 10% 35% 10% 35% 10%;
 }
 
 .contenedor-tienda p{
-    color: #ffffff;
+    color: black;
     margin-right: 10px;
 }
 
 .contenedornombre p{
-    color: #B5D8C7;
+    color: black;
 }
 
 .articulo1{
@@ -137,9 +196,56 @@ article {
     grid-column: 1;
     grid-row: 3;
 }
-.nada{
-    grid-column: 1;
+
+.filtro{
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+
+}
+.filtro-titulo{
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    width: 100%;
+
+}
+.lbl{
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+    background: #B5D8C7;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .25s;
+}
+.lbl::after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 100px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: .25s;
+}
+#lbl-switch{
+    display:none;
+}
+#lbl-switch:checked + .lbl::after{
+    left: 26px;
+}
+#lbl-switch:checked + .lbl{
+    background: #9CCCC0;
+}
+.consA{
+    grid-row: 2;
+}
+.consS{
+    grid-row: 3;
 }
 .nada2{
     grid-column: 3;
@@ -153,4 +259,50 @@ footer{
     grid-column: auto;
     justify-content: center;
     margin-top: 20px;
+}
+
+/*esta parte hace que las flores al ponerles el mouse encima crezcan*/
+
+.flor:hover {
+    transform: scale(1.1);
+}
+
+.flor:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+
+/*la parte que cubre la tarjeta*/
+
+.flor{
+    position: relative;
+    width: 333px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin: 50px;
+}
+
+.flor:hover .hover-contenedor{
+    display: block;
+}   
+    
+.hover-contenedor {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(red, green, blue, alpha);
+    padding: 10px;
+    box-sizing: border-box;
+} 
+
+.hover-contenedor h3 {
+    margin-top: 0;
+}
+
+.hover-contenedor img {
+    width: 100%;
 }
