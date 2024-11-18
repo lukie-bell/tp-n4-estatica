@@ -11,7 +11,7 @@
     <header class="contenedor">
         <div>
             <logo class="pikmin">
-                <img src="imagenes/Pikmin.png" alt="" width="100px" height="100px" class="img">
+                <img src="imagenes/Pikmin.webp" alt="" width="100px" height="100px" class="img">
             </logo>
         </div>
 
@@ -24,46 +24,214 @@
 
         <div>
             <logo class="pikmin">
-                <img src="imagenes/Pikmin.png" alt="" width="100px" height="100px" class="img">
+                <img src="imagenes/Pikmin.webp" alt="" width="100px" height="100px" class="img">
             </logo>
         </div>
 
     </header>
 
     <article>
-        <div class="nada"></div>
+        <div class="contenedor_filtros"><!--FILTROS-->
+            <p>FILTROS</p>
+            <div class="container-switch"><!--activar/desactivar flitros-->
+                <input type="checkbox" id="lbl-switch">
+                <label for="lbl-switch" class="lbl"></label>
+            </div>
+
+            <!--CONSUMO AGUA-->
+            <div class="consA">
+                <div class="titulo_consumo">consumo de agua</div>
+                <div class="ALTO">
+                    <label for="altoA"></label> ALTO
+                </div>
+                <div class="Gota">
+                    <input type="radio" name="consA" id="altoA" value="alt" >   
+                </div>
+
+
+                <div class="MEDIANO">
+                    <label for="medio"></label> MADIO
+                </div>
+                <div class="gota2">
+                    <input type="radio" name="consA" id="medio" value="medio" class="Gota" checked>
+                </div>
+
+                <div class="BAJO">
+                    <label for="BAJO"></label> BAJO 
+                </div>
+
+                <div class="gota3">
+                    <input  type="radio" name="consA" id="BAJO" value="bajo" class="Gota">
+                </div>
+            </div>
+
+            <!--CONSUMO SOLSITO-->
+            <div class="consS">
+                <div class="titulo_consumo">consumo de solsito</div>
+                <div class="ALTO">
+                    <label for="altoA"></label> ALTO
+                </div>
+                <div class="Gota">
+                    <input type="radio" name="consS" id="altoA" value="alt" >   
+                </div>
+
+
+                <div class="MEDIANO">
+                    <label for="medio"></label> MADIO
+                </div>
+                <div class="gota2">
+                    <input type="radio" name="consS" id="medio" value="medio" class="Gota" checked>
+                </div>
+
+                <div class="BAJO">
+                    <label for="BAJO"></label> BAJO 
+                </div>
+
+                <div class="gota3">
+                    <input type="radio" name="consS" id="BAJO" value="bajo" class="Gota">
+                </div>
+                
+            </div>
+        </div>
+
             <div class="contenedor-tienda">
-                <div class="articulo1">
-                    <img src="imagenes/cala.webp" alt="" width="80%" height="80%" >
+
+                <!-- la flor -->
+
+                <div class="contenedorflores">
+                    <div class="flor">
+                        <img src="imagenes/margarita.webp" alt=""  width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            margarita
+                        </h3>
+                        <p class="textoflor">
+                            un margarita  es una planta muy bonita
+                        </p>
+                        <div class="hover-contenedor">
+                            <img src="imagenes/foto.png" alt="">
+                        </div>
+        
+                    </div>
+                    
+                    <div class="flor">
+                        <img src="imagenes/rosa negra.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Rosa negra
+                        </h3>
+                        <p class="textoflor">
+                            las rosas son bonitas
+                        </p>
+                        <div class="hover-contenedor">
+                           <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+        
+                    </div>
+    
+                    <div class="flor">
+                        <img src="imagenes/cala.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Cala
+                        </h3>
+                        <p class="textoflor">
+                            es una cala
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                         </div>
+                    </div>
+    
+                    <div class="flor">
+                        <img src="imagenes/chocory.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Chicory
+                        </h3>
+                        <p class="textoflor">
+                            Chicory
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+    
+                    <div class="flor">
+                        <img src="imagenes/lila.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Lila
+                        </h3>
+                        <p class="textoflor">
+                            Lila
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+
+                    <div class="flor">
+                        <img src="imagenes/trumpet_gentian.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Trumpet Gentian
+                        </h3>
+                        <p class="textoflor">
+                            trompeta
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+
+                    <div class="flor">
+                        <img src="imagenes/cetaro.webp" alt="" width="120px" height="110px"class="imgflor">
+                        <h3 class="tituloflor">
+                            Cerato
+                        </h3>
+                        <p class="textoflor">
+                            Cerato
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+                    
+                    <div class="flor">
+                        <img src="imagenes/tulipan.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            tulipan
+                        </h3>
+                        <p class="textoflor">
+                            tulipan
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+    
+                    <div class="flor">
+                        <img src="imagenes/peony.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Peony
+                        </h3>
+                        <p class="textoflor">
+                            trompeta
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+    
+                    <div class="flor">
+                        <img src="imagenes/Pikmin.webp" alt="" width="120px" height="110px" class="imgflor">
+                        <h3 class="tituloflor">
+                            Magenta
+                        </h3>
+                        <p class="textoflor">
+                            trompeta
+                        </p>
+                        <div class="hover-contenedor">
+                            <video src="videos/0001-0030.mkv" autoplay></video>
+                        </div>
+                    </div>
+                    
                 </div>
-
-                <center>
-                    <p>
-                        La cala o el lirio de agua es una planta herbácea vivaz, perteneciente a la familia de las aráceas, que vegeta a expensas de un tallo carnoso subterráneo.
-                        Su nombre científico es Zantedeschia aethiopica pero se la conoce popularmente por cala, lirio de agua, alcatraz, cala de Etiopía, aro de Etiopía, cartucho, flor de pato o flor del jarro.
-                    </p>
-                </center>
-
-                <div class="articulo2">
-                    <img src="imagenes/narciso.webp" alt="" width="80%" height="80%" >
-                </div>
-
-                <center>
-                    <p>
-                        Narcissus es un género de la familia Amaryllidaceae originario de la cuenca mediterránea y Europa. Comprende numerosas especies bulbosas, la mayoría con floración primaveral, aunque hay algunas especies que florecen en el otoño. En español, se le conoce como flor pato o narciso (aunque este término sea menos común). La mayoría de sus especies son nativas de la región mediterránea
-                    </p>
-                </center>
-
-                <div class="articulo3">
-                    <img src="imagenes/rosa_negra.webp" alt="" width="80%" height="80%" >
-                </div>
-
-               <center>
-                   <p>
-                        Las rosas negras son unas de las flores más llamativas del mundo. El color negro siempre se ha asociado a la muerte, a lo negativo, a la tristeza y al duelo, de modo que el hecho de que una planta viva pueda producir flores de un color tan oscuro es algo increíble, ya que se juntan la Vida con la Muerte.
-                   </p>
-               </center>
-
             </div>
         <div class="nada2"></div>
     </article>
@@ -71,13 +239,13 @@
 
     <footer>
         <div class="pikmin" >
-            <img src="imagenes/Pikmin.png" alt="" width="100px" height="100px" class="img">
+            <img src="imagenes/Pikmin.webp" alt="" width="100px" height="100px" class="img">
         </div>
 
         <div></div>
 
         <div class="pikmin" >
-            <img src="imagenes/Pikmin.png" alt="" width="100px" height="100px" class="img">
+            <img src="imagenes/Pikmin.webp" alt="" width="100px" height="100px" class="img">
         </div>
 
     </footer>
